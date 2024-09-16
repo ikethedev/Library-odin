@@ -56,6 +56,7 @@ class BookView {
 
   renderBooks() {
     const bookContainer = document.querySelector("#books");
+    bookContainer.innerHTML = "";
     myLibrary.forEach((bookData) => {
       bookContainer.appendChild(book.createBookCard(bookData));
     });
